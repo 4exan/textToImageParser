@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1e1e2e;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.kusakabe.desktopdemo.controller.ParserController">
+   <children>
+      <VBox layoutY="5.0" prefHeight="200.0" prefWidth="150.0" spacing="10.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="loadImageBtn" mnemonicParsing="false" onAction="#loadImage" style="-fx-background-color: #a6e3a1;" text="Load Image" />
+            <Button fx:id="decodeImageBtn" mnemonicParsing="false" onAction="#decodeImage" style="-fx-background-color: #89dceb;" text="Decode Image" />
+            <ImageView fx:id="imagePreview" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TextArea fx:id="textArea" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #181825;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <VBox layoutX="10.0" layoutY="15.0" prefHeight="200.0" prefWidth="150.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Button fx:id="generateImageBtn" mnemonicParsing="false" onAction="#generateImage" style="-fx-background-color: #89dceb;" text="Generate Image" />
+            <Button fx:id="saveImageBtn" mnemonicParsing="false" onAction="#saveImage" style="-fx-background-color: #a6e3a1;" text="Save image" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="actionLabel" text="Action label" textFill="#cdd6f4" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="Inter Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label text="ImageToText Parser @4exan" textFill="#a6adc8" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" />
+   </children>
+</AnchorPane>
